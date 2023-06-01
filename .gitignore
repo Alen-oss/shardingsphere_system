@@ -1,0 +1,45 @@
+### .ignore文件忽略规则 ###
+# /表示目录
+# *通配多个字符；使用**表示匹配任意中间目录
+# ？通配单个字符
+# ！表示不忽略匹配到的文件或目录
+# git对于.ignore文件配置文件是按从上到下进行规则匹配的，即规则生效是从上到下的
+# 创建.gitnore文件一定要在第一次push之前，不然后续再添加规则也是不会生效的
+
+### 忽略help.md文件，没什么问题 ###
+HELP.md
+### 忽略任何编译产生的文件 ###
+target/
+### 忽略.idea文件夹 ###
+.idea/
+.idea
+### 忽略多模块下的target目录 ###
+**/target/
+### 不用管 ###
+!.mvn/wrapper/maven-wrapper.jar
+### STS ###
+.apt_generated
+.classpath
+.factorypath
+.project
+.settings
+.springBeans
+.sts4-cache
+### IntelliJ IDEA ###
+*.iws
+### 忽略任何以.iml结尾的文件 ###
+*.iml
+*.ipr
+### NetBeans ###
+/nbproject/private/
+/nbbuild/
+/dist/
+/nbdist/
+/.nb-gradle/
+build/
+!**/src/main/**/build/
+!**/src/test/**/build/
+### VS Code ###
+.vscode/
+### Ignore Mac System files ###
+.DS_store
