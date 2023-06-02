@@ -8,3 +8,5 @@ example1和example2是关于数据分表的两种不同实现：
 example3是关于数据读写分离的实现：
 
 shardingsphere实现读写分离的方式非常简单，只需要按照要求书写配置文件即可
+
+example4基于AOP实现数据读写分离
